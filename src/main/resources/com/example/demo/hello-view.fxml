@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+   <children>
+      <Label fx:id="result" layoutX="268.0" layoutY="191.0" prefHeight="70.0" prefWidth="650.0" AnchorPane.bottomAnchor="550.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <AnchorPane layoutX="249.0" layoutY="201.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: silver;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+         <children>
+            <VBox prefHeight="550.0" prefWidth="650.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox prefHeight="110.0" prefWidth="650.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#clear" prefHeight="60.0" prefWidth="60.0" text="C">
+                           <HBox.margin>
+                              <Insets left="50.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#processUnaryOperator" prefHeight="60.0" prefWidth="60.0" text="sqrt">
+                           <HBox.margin>
+                              <Insets left="38.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#processUnaryOperator" prefHeight="60.0" prefWidth="60.0" text="e^s">
+                           <HBox.margin>
+                              <Insets left="38.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#processUnaryOperator" prefHeight="60.0" prefWidth="60.0" text="Log">
+                           <HBox.margin>
+                              <Insets left="38.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#processBinaryOperator" prefHeight="60.0" prefWidth="60.0" text="+">
+                           <HBox.margin>
+                              <Insets left="38.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#processUnaryOperator" prefHeight="60.0" prefWidth="60.0" text="Sin">
+                           <HBox.margin>
+                              <Insets left="38.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="110.0" prefWidth="650.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#prosessNumber" prefHeight="60.0" prefWidth="60.0" text="7">
+                           <HBox.margin>
+                              <Insets left="50.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#prosessNumber" prefHeight="60.0" prefWidth="60.0" text="8">
+                           <HBox.margin>
+                              <Insets left="38.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#prosessNumber" prefHeight="60.0" prefWidth="60.0" text="9">
+                           <HBox.margin>
+                              <Insets left="38.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#processUnaryOperator" prefHeight="60.0" prefWidth="60.0" text="Ln">
+                           <HBox.margin>
+                              <Insets left="38.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#processBinaryOperator" prefHeight="60.0" prefWidth="60.0" text="-">
+                           <HBox.margin>
+                              <Insets left="38.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#processUnaryOperator" prefHeight="60.0" prefWidth="60.0" text="Cos">
+                           <HBox.margin>
+                              <Insets left="38.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="110.0" prefWidth="650.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#prosessNumber" prefHeight="60.0" prefWidth="60.0" text="4">
+                           <HBox.margin>
+                              <Insets left="50.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#prosessNumber" prefHeight="60.0" prefWidth="60.0" text="5">
+                           <HBox.margin>
+                              <Insets left="38.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#prosessNumber" prefHeight="60.0" prefWidth="60.0" text="6">
+                           <HBox.margin>
+                              <Insets left="38.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="x^y">
+                           <HBox.margin>
+                              <Insets left="38.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#processBinaryOperator" prefHeight="60.0" prefWidth="60.0" text="*">
+                           <HBox.margin>
+                              <Insets left="38.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#processUnaryOperator" prefHeight="60.0" prefWidth="60.0" text="Tan">
+                           <HBox.margin>
+                              <Insets left="38.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="110.0" prefWidth="650.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#prosessNumber" prefHeight="60.0" prefWidth="60.0" text="1">
+                           <HBox.margin>
+                              <Insets left="50.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#prosessNumber" prefHeight="60.0" prefWidth="60.0" text="2">
+                           <HBox.margin>
+                              <Insets left="38.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#prosessNumber" prefHeight="60.0" prefWidth="60.0" text="3">
+                           <HBox.margin>
+                              <Insets left="38.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#processUnaryOperator" prefHeight="60.0" prefWidth="60.0" text="x^2">
+                           <HBox.margin>
+                              <Insets left="38.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#processBinaryOperator" prefHeight="60.0" prefWidth="60.0" text="/">
+                           <HBox.margin>
+                              <Insets left="38.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#processBinaryOperator" prefHeight="60.0" prefWidth="60.0" text="Mod">
+                           <HBox.margin>
+                              <Insets left="38.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#prosessNumber" prefHeight="60.0" prefWidth="158.0" text="0">
+                           <HBox.margin>
+                              <Insets left="50.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#prosessNumber" prefHeight="60.0" prefWidth="60.0" text=".">
+                           <HBox.margin>
+                              <Insets left="38.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#processUnaryOperator" prefHeight="60.0" prefWidth="60.0" text="x^3">
+                           <HBox.margin>
+                              <Insets left="38.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#processBinaryOperator" prefHeight="60.0" prefWidth="60.0" text="=">
+                           <HBox.margin>
+                              <Insets left="38.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#processUnaryOperator" prefHeight="60.0" prefWidth="60.0" text="x!">
+                           <HBox.margin>
+                              <Insets left="38.0" top="50.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
